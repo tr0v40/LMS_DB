@@ -1,0 +1,14 @@
+# Ignora Cache do Python
+*.pyc
+*.pot
+*.log
+*.cover
+.cache
+.cfg
+
+Local_settings.py
+db.sqlite3
+media
+__pycache__
+lib/
+lib64/
