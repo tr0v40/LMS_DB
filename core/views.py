@@ -7,13 +7,6 @@ def cadastro_disciplina(request):
     return render(request, "cadastro_disciplina.html", contexto)
 
 
-def novocurso(request):
-    contexto={
-        "titulo":"Faculdade Impacta de Tecnologia",
-    }
-    return render(request, "novocurso.html", contexto)
-
-
 def cursos(request):
     contexto={
         "titulo":"Faculdade Impacta de Tecnologia",
@@ -136,5 +129,3 @@ def tabela_aluno(request):
     }
     return render(request, "tabela_aluno.html", contexto)
 
-def cadastro_aluno(request):   
-    return render(request, "cadastro_aluno.html")

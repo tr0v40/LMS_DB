@@ -1,6 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 from core import views
+from curriculo.views import novocurso, cadastro_aluno
 #from django.urls import path << usar no windows
 
 urlpatterns = [
@@ -8,8 +9,8 @@ urlpatterns = [
     url('', views.index, name ='index'),
     url('cadastro-disciplina/', views.cadastro_disciplina, name = "cadastro_disciplina"),
     url('cursos/', views.cursos, name="cursos"),
-    url('novo-curso/', views.novocurso, name = "novocurso"),
-    url('cadastro-aluno/', views.cadastro_aluno, name ="cadastro_aluno"),
+    url('novo-curso/', novocurso, name = "novocurso"),
+    url('cadastro-aluno/', cadastro_aluno, name ="cadastro_aluno"),
     url('cursos/grade-ads/', views.grade_ads, name="grade_ads"),
     url('cursos/grade-redes/',views.grade_redes, name="grade_redes"),
     url('cursos/grade-bd/', views.grade_bd, name = "grade_bd"),
